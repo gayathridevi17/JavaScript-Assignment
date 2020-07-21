@@ -1,0 +1,51 @@
+﻿do{
+    console.log("MENU");
+    console.log("1. ADDITION");
+    console.log("2. SUBTRACTION");
+    console.log("3. MULTIPLICATION");
+    console.log("4. DIVISION");
+    console.log("5. SQUARE ROOT");
+    console.log("6. PERCENTAGE");
+    console.log("7. EXIT");
+    var choice = prompt("Enter your choice");
+    console.log(choice);
+    switch (choice) {
+        case '1':
+            let val = prompt("Note: this is only for adding two numbers!! Enter the value:");
+               let val1 = prompt("Enter the other value:");
+               let res = +val + +val1;
+                console.log("The result is " +res);
+        case '2':
+            let val2 = prompt("Note: this is only for subtracting two numbers!! Enter the value:");
+            let val3 = prompt("Enter the other value:");
+            let resu = +val2 - +val3;
+            console.log("The result is " +resu);
+            break;
+        case  '3':
+            let val4 = prompt("Note: this is only for mutiplying two numbers!! Enter the value:");
+            let val5 = prompt("Enter the other value:");
+            let resul = +val4 * +val5;
+            console.log("The result is " +resul);
+            break;
+        case '4':
+            let valu = prompt("Note: this is only for dividing two numbers!! Enter the value:");
+            let value = prompt("Enter the other value:");
+            let result = +valu / +value;
+            console.log("The result is "  +result);
+            break;
+        case '5':
+            let val8 = prompt("Enter the value:");
+            let result1 = Math.sqrt(+val8);
+            console.log("The result is " +result1);
+           break;
+        case '6':
+                let val9 = prompt("Enter the value to convert:");
+                let val10 = prompt("Enter the value out of: ");
+                let reslt = (val9/val10)*100;
+                console.log("The result is " +reslt);
+                break;
+        default:
+            console.log("Exit!!");
+            break;
+    }
+    }while(choice<7);
