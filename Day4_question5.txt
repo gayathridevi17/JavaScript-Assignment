@@ -1,0 +1,36 @@
+﻿let num = prompt('Enter the number of employees you want to reward ');
+let x = 0;
+for(let i=1;i<=num;i++)
+{
+    let sales = prompt('Enter the sales done by employee ' +i);
+    let commission;
+    let commission_manager;
+    if(sales>0 && sales<=5000)
+    {
+         commission = (sales/100)*2;
+         commission_manager = (sales/100)*4;
+
+
+    }
+    else if(sales>5000 && sales<=10000)
+    {
+         commission = (sales/100)*5; 
+         commission_manager = (sales/100)*10;
+    }
+    else if(sales>10000 && sales<=20000)
+    {
+         commission = (sales/100)*7; 
+         commission_manager = (sales/100)*14;    
+        }
+    else
+    {
+         commission = (sales/100)*10;
+         commission_manager = (sales/100)*20;
+    }
+  
+    x = x + commission_manager;
+    console.log(`Commission gained by emloyee ${i} is ${commission}`);
+    console.log(`Commission gained by manager for the sales of employee ${i} is ${commission_manager}`);
+  
+}
+console.log(`Total Commission gained by manager is ${x}`);
