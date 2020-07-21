@@ -1,0 +1,4 @@
+﻿let shoppingList = ['Soap' , 'Shampoo' , 'Fruits' , 'Vegetables'];
+let shoppingBasket = shoppingList;
+shoppingBasket.push('Toothpaste','Toothbrush');
+console.log(shoppingBasket);
