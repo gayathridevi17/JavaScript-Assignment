@@ -1,0 +1,8 @@
+﻿var input = prompt('Enter the value');
+do
+{
+var x=input;
+var inputagain;    
+x > 100 ? console.log('End') : inputagain = prompt('Enter the value again') ;
+}while(inputagain<100);
+console.log('End');
