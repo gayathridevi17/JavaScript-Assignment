@@ -1,0 +1,6 @@
+﻿var hi = (ques, yes, no) => confirm(ques) ? yes() : no();
+var ques = "Do you agree?"
+let yes = () => alert(" You agreed!!");
+let no = () => alert("You  didn't agree!!");
+let res = hi(ques,yes,no);
+console.log(res);
