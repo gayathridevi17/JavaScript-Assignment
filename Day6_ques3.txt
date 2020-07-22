@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+ <html>
+
+
+<head>
+
+
+<script>
+
+
+var customerName = prompt("Please enter your name", ""); if (customerName!= null) {
+
+
+document.getElementByid("welcome").innerHTML
+
+
+=
+
+
+"Hello" + customerName + "! How are you today?"; }
+
+
+</script>
+
+
+</head>
+
+
+<body>
+
+
+<div id="welcome">My First JavaScript code.
+
+
+</div>
+
+
+function current Time() { hour = updateTime(hour);
+
+
+min = updateTime(min):
+
+
+sec = updateTime(sec);
+
+
+function updateTime(k) { if (k < 10) { return "0" + k;
+
+
+}
+
+
+else {
+
+
+return k;
+
+
+}
+}
+{
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+
+</body> </html>
